@@ -1,0 +1,228 @@
+*{
+	/*removes default padding and margins*/
+	margin: 0;
+	padding: 0px; 
+	box-sizing: border-box; /*to avoid overflow */
+}
+
+/* Use this protocol when using float*/
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*Navigation*/
+nav {
+  background-color: #212121 !important;
+}
+
+/*Body*/
+
+p {
+  line-height: 2rem;
+}
+
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+  .parallax-container .section {
+    width: 100%;
+}
+
+.card {
+  width: 300px;
+}
+
+.card .small{
+  height: 100%;
+}
+
+.reg_container
+{
+  width: 60%;
+  margin: 80px auto;
+}
+
+.tabs .indicator
+{
+  background-color: #e0f2f1;
+  height: 60px;
+  opacity: 0.3;
+}
+
+.form-container
+{
+  padding: 40px;
+  padding-top: 10px;
+}
+
+.confirmation-tabs-btn
+{
+  position: absolute;
+}
+
+.loginButton,
+.regButton,
+.submitBtn,
+.continueBtn {
+/*    background-color: #26a69a !important;*/
+    width: 20%;
+}
+
+.submitBtn,
+.continueBtn {
+  margin: 15px;
+
+}
+
+.cartForm{
+  margin: 15px;
+}
+
+.cartItems{
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+}
+
+
+/*Footer*/
+.page-footer {
+  background-color: #212121 !important;
+}
+
+.footer-copyright{
+  background-color: #212121 !important;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+
+.btnSearch{
+    width: 65%!important;
+}
+
+.btnAdd{
+  width: 60%;
+  margin: 20px; 
+}
+
+.modal .modal-close {
+    margin: 5px;
+}
+
+.modal {
+    height: 80%;
+}
+
+.removeFromCart {
+  margin: 10px;
+}
+
+
+
+/*Mobile*/
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+
+  .reg_container{
+  width: 80%;
+  height: 60%;
+  margin: 80px auto;
+  }
+
+  li < .indicator{
+      right: 50%;
+      left: 0px;
+  }
+
+  .btnAdd{
+    padding-left: 20px;
+    margin: 10px;
+    width: 100%;
+  }
+
+  .btnSearch{
+    width: 100%!important;
+  }
+
+
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+
+  .reg_container
+  {
+    margin-top: 80px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 80px;
+  }
+
+  ul < li {
+      right: 50%;
+      left: 0px;
+  }
+
+  .browser-default1{
+    width: 85%;
+  }
+
+  .btnSearch{
+    width: 85%;
+  }
+
+  .btnAdd{
+    width: 100%;
+    padding-left: 20px;
+    margin: 10px;
+  }
+
+  .regButton {
+      width: 40%;
+  }
+
+  .loginButton {
+      width: 40%;
+  }
+
+  .modal {
+    width: 100%;
+  }
+
+  .btnAddItem{
+    margin-left: 15px;
+    width: 60%;
+    width: 55%;
+  }
+
+ 
+
+}
+
